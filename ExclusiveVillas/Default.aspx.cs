@@ -19,8 +19,8 @@ namespace ExclusiveVillas
             string villaSelectSql = "SELECT [Id], [Name], [Address], [WeeklyPrice] FROM [ExclusiveVillas].[dbo].[Villas]";
             var connection = new SqlConnection(connectionStr);
 
-            // get all villas 
-            List<Villa> villas = connection.Query<Villa>(villaSelectSql).ToList() ;
+            // get all villas
+            List<Villa> villas = connection.Query<Villa>(villaSelectSql).ToList();
             return villas;
         }
     }
