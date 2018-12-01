@@ -12,7 +12,6 @@
     <h1>Exclusive Villas </h1>
     <p>New Villas </p>
 
-
     <script>    
         // make an httprequest to server method and get the response.
 
@@ -23,7 +22,7 @@
             url: "/Default.aspx/GetAllVillas",
             data: "{}",
             success: function (response) {
-                console.log(response);
+                console.log(response.d);
             }
         });
     </script>

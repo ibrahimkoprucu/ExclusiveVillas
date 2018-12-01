@@ -10,7 +10,7 @@ namespace ExclusiveVillas
 {
     public partial class Default : System.Web.UI.Page
     {
-        // database giden bağlantı yolu. (içerisinde bulunduğu sunucunun ipsi ve db adı vb.. bulunur.)
+        // database giden bağlantı yolu. (bulunduğu sunucunun ipsi ve db adı vb.. bulunur.)
         private const string connectionStr = "Data Source=DESKTOP-KH8I08O\\SQLEXPRESS;Initial Catalog=ExclusiveVillas;Integrated Security=True";
 
         [WebMethod]
