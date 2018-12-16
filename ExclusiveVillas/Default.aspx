@@ -21,6 +21,11 @@
 
         <p>New Villas</p>
 
+        <hr />
+
+        <a class="btn btn-outline-info" href="AddVilla.aspx">Villa Ekle</a>
+        <a class="btn btn-outline-success" href="ReservationPage.aspx">Reservasyon Yap</a>
+
         <div class="row">
 
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -67,7 +72,7 @@
             </div>
             <div class="col-sm">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/villa_panaroma.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/villa_panaroma.jpg" alt="Card image cap" />
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

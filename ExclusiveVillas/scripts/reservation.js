@@ -20,7 +20,7 @@
             url: "ReservationPage.aspx/SaveCustomerReservations",
             data: "{reservation: " + JSON.stringify(reservationData) + "}",
             success: function (response) {
-                alert("heyy");
+                alert("Kaydettim");
             },
             error: function () {
                 alert("Bir hata oldu");

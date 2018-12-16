@@ -3,6 +3,7 @@ using ExclusiveVillas.Entities;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Web.Script.Services;
 using System.Web.Services;
 
 namespace ExclusiveVillas
@@ -16,13 +17,14 @@ namespace ExclusiveVillas
         /// Tüm villaları dönen Web Service metodu
         /// </summary>
         [WebMethod]
+        [ScriptMethod(UseHttpGet = true, ResponseFormat = ResponseFormat.Json)]
         public static List<Villa> GetAllVillas()
         {
             // database de çalıştırmak üzere sql sorgumuz.
             // tüm vilları image detayı ile sorgular.
             string villaSelectSql = @"
                         SELECT v.Id, v.Name, v.Address, v.WeeklyPrice, i.ImageName, i.AlternativeText
-                        FROM Villas AS v INNER JOIN Images AS i ON v.Id = i.VillaId";
+                        FROM Villas AS v left JOIN Images AS i ON v.Id = i.VillaId";
 
             // database e bağlanmayı sağlayan SqlConnection sınıfının bir örneği alınır.
             var connection = new SqlConnection(connectionStr);

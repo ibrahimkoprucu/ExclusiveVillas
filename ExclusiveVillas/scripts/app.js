@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     // make an httprequest to server method and get the response.
     $.ajax({
-        type: "POST",
+        type: "GET",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         url: "/Default.aspx/GetAllVillas",
