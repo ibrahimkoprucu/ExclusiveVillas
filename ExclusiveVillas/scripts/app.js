@@ -26,14 +26,13 @@
 
                 var isActive = i == 0 ? "active" : "";
 
-                var template = "<div class='carousel-item " + isActive + "'><img class='d-block w-100' src='images/" + currentItem.ImageName + "' /></div >";
-
-                console.log(template);
-
-                $("#resimler").append(template);
+                if (currentItem.ImageName) {
+                  var template = "<div class='carousel-item " + isActive + "'><img class='d-block w-100' src='images/" + currentItem.ImageName + "' /></div >";
+                  $("#resimler").append(template);
+                }
             }
 
-            $('.carousel').carousel()
+            $('.carousel').carousel();
         }
     });
 });
