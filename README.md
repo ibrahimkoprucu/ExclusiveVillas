@@ -6,8 +6,8 @@ Technologies We Use
 
 Server-Side
 -----------
-1) ASP.NET Web Forms
-2) Dapper (to connect to database)
+* ASP.NET Web Forms
+* Dapper (to connect to database)
 
 Client-Side
 -----------
